@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-05-24 22:48:19 -0400
+title:  "Threes! Command Lines!"
+date:   2016-06-05 22:48:19 -0400
 categories: programming threes
 ---
 I've been playing the awesome puzzle game [Threes](http://asherv.com/threes/) on and off for a few years now, and figured I'd try my hand at implementing a very simple command line version of it.
