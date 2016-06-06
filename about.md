@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi there!
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+My name is André Rocha, and I'm a software engineer and general technology nerd.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I started this blog both as a means of practicing my writing and to keep track of whatever personal projects and ideas I'm working on at any given time. I will probably post a lot about programming, but every once in a while I might have something different to share.
+
+If you want to get in touch then the best way is to email me at andrematheus94[at]gmail.com. You can find my resume [here](https://www.dropbox.com/s/0oq7fyby06wf2d7/AndreCV2.0.pdf?dl=0).

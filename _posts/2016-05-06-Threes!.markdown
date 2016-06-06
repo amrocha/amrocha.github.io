@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2016-05-24 22:48:19 -0400
+categories: programming threes
+---
+I've been playing the awesome puzzle game [Threes](http://asherv.com/threes/) on and off for a few years now, and figured I'd try my hand at implementing a very simple command line version of it.
+
+So last weekend I took a stab at it and you can find the end product [here!](https://github.com/amrocha/CLI3s)
+
+I also used this project as a way to try using Vim as my primary editor, but halfway through I went back to Atom. I like Vim a lot and it will always be my go to editor when working directly on a server, but for now I'll stick with Atom. Markdown preview and dead-simple extensibility are really hard to beat.
+
+Despite my Vim mishaps I still liked working on this project. My favourite part was comparing my implementation to others I could find on Github ([ThreesJS!](https://github.com/angelali/threesjs)). Turns out my implementation is fairly unique!
+
+I got sick of having to check which direction the player moved the board in different parts of the code, so in the first place I checked it I also generated another matrix representing the same board, but flipped so that the move would always be a right move instead of whatever the original move is.
+
+That way there is only one place that needs to be aware of the actual board and move in the codebase, and everywhere else can just assume that the board they will be given is moving right.
+
+For example, the following board:
+
+{% highlight ruby %}
+[0,0,0,0]
+[1,1,1,1]
+[2,2,2,2]
+[3,3,3,3]
+{% endhighlight %}
+and a move up, will be transformed into this board:
+{% highlight ruby %}
+[3,2,1,0]
+[3,2,1,0]
+[3,2,1,0]
+[3,2,1,0]
+{% endhighlight %}
+with a move right. And of course, after the move is applied the board is transformed back into the original board again.
+
+There's still a few more features I want to add, such as scoring and being able to restart a game(and I thought about publishing this as a pip package to learn what that process is like) but as the game is playable right now I figured I'd write a bit about my initial thoughts.
